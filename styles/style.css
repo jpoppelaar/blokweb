@@ -1,0 +1,129 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'AT Osmose';
+  src: local('AT Osmose Ultra Light'), local('AT-Osmose-Ultra-Light'),
+      url('ATOsmose-UltraLight.woff2') format('woff2'),
+      url('ATOsmose-UltraLight.woff') format('woff'),
+      url('ATOsmose-UltraLight.ttf') format('truetype');
+
+      font-family: 'EditorialNew-Ultralight';
+      src: local('EditorialNew-Ultralight'), local('EditorialNew-Ultralight'),
+          url('EditorialNew-Ultralight.otf') format('opentype');
+
+          
+
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  background-color:#cccbc4;
+}
+
+.logo-main{
+  width: 81.45px;
+  height: 81.20px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+nav{
+  background-color: #cccbc4;
+  margin: -20px -20px -20px -20px;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+h1{
+  font-family: 'AT Osmose';
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: -40px;
+}
+
+h2{
+  font-family: 'AT Osmose';
+  font-size: 1.2em; 
+  color:#535353;
+  margin-top:-10px;
+  margin-left: 20px;
+  padding-bottom:20px;
+}
+
+p{
+  font-family: 'EditorialNew-Ultralight';
+  line-height: 30px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 50px 20px 10px 20px;
+  color: grey;
+
+}
+
+.readmore{
+  text-align: center;
+  display: block; 
+  text-decoration: none; 
+  font-family: Helvetica, Arial, Sans-Serif;
+  color:#cccbc4;
+  font-size: 0.7em;  
+}
+.title_pictures_left{
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.6em; 
+  text-align: left;
+  color: grey;
+  margin-top: -40px;
+  
+}
+
+.date_right{
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.6em; 
+  text-align: right;
+  margin-top: -101px;
+}
+
+.first_picture{
+width: 468px;
+height: 283.17px;
+padding-left: 30px;
+}
+
+.second_picture{
+  width: 468px;
+  height: 537.02px;
+  margin-left: 26px;
+  margin-bottom: 25px;
+}
+
+
+article{
+  background-color: #fff;
+  flex-direction: column;
+  margin-left: -8px;
+  margin-right: -12px;
+}
+
+.partners{
+  width: 100%;
+  height: 100;
+
+
+
+}
+
+footer{
+  background-color: #cccbc4;
+
+}
