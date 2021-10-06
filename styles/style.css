@@ -21,33 +21,70 @@ body {
 }
 
 .logo-main{
-  width: 81.45px;
-  height: 81.20px;
-  padding-bottom: 30px;
   display: block;
-  margin-left: auto;
-  margin-right: auto; 
+  padding: 1rem;
+  
+}
+header {
+	background-color: #cccbc4;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	
+/*styling voor de navigatie, door position fixed zal de gehele balk op het bovenste gedeelte van de website te zien zijn, ook bij scrollen*/;
 }
 
-nav{
-  background-color: #cccbc4;
-  margin: -20px -20px -20px -20px;
+nav {
+	display: flex;
+	justify-content: space-between;
 }
 
-
-ul{
-  list-style-type: none;
+nav img:first-of-type {
+	order: -1;
+	width: 3em;
+	z-index: 1;
 }
 
-a{
-  text-decoration: none;
+nav img:last-of-type {
+	width: 5em;
+	z-index: 1;
+}
 
+nav ul {
+	background-color: #cccbc4;
+	position: fixed;
+	transform: translateX(100%);
+	transition: 1s;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	padding: 3em;
+	list-style-type: none;
+	font-size: 25px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 0;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.uitklappen {
+	transform: translateX(0);
 }
 
 h1{
   font-family: 'AT Osmose';
   text-align: center;
   line-height: 40px;
+  margin-top: 4em;
   margin-bottom: -40px;
 }
 
