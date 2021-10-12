@@ -18,6 +18,7 @@
 }
 body {
   background-color:#cccbc4;
+  z-index: 0;
 }
 
 .logo-main{
@@ -31,7 +32,6 @@ header {
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 2;
 	
 /*styling voor de navigatie, door position fixed zal de gehele balk op het bovenste gedeelte van de website te zien zijn, ook bij scrollen*/;
 }
@@ -44,12 +44,10 @@ nav {
 nav img:first-of-type {
 	order: -1;
 	width: 3em;
-	z-index: 1;
 }
 
 nav img:last-of-type {
 	width: 5em;
-	z-index: 1;
 }
 
 nav ul {
@@ -63,7 +61,7 @@ nav ul {
 	left: 0;
 	padding: 3em;
 	list-style-type: none;
-	font-size: 25px;
+	font-size: 1.5625em;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
@@ -81,10 +79,16 @@ nav a {
 	transform: translateX(0);
 }
 
+main p {
+  max-width:40rem;
+  margin:0 auto;
+  /* line-height:1.75; */
+} 
+
 h1{
   font-family: 'AT Osmose';
   text-align: center;
-  line-height: 40px;
+  /*line-height: 40px; */
   margin-top: 4em;
   margin-bottom: -40px;
 }
@@ -93,17 +97,17 @@ h2{
   font-family: 'AT Osmose';
   font-size: 1.2em; 
   color:#535353;
-  margin-top:-10px;
-  margin-left: 20px;
-  padding-bottom:20px;
+  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 p{
   font-family: 'EditorialNew-Ultralight';
-  line-height: 30px;
+  line-height: 1.875rem;
   font-size: 1.1em;
   text-align: center;
-  padding: 50px 20px 10px 20px;
+  padding: 3.125rem 3rem 0.625rem 3rem;
   color: grey;
 
 }
@@ -121,7 +125,7 @@ p{
   font-size: 0.6em; 
   text-align: left;
   color: grey;
-  margin-top: -40px;
+  margin-top: -2.5rem;
   
 }
 
@@ -129,39 +133,88 @@ p{
   font-family: Helvetica, Arial, Sans-Serif;
   font-size: 0.6em; 
   text-align: right;
-  margin-top: -101px;
+  margin-top: -6.313rem;
 }
 
-.first_picture{
-width: 468px;
-height: 283.17px;
-padding-left: 30px;
-}
+/* .first_picture{
+  width: 29.25rem;
+  height: 33.564rem;
+  padding-left: 1.875rem;
+} */
 
-.second_picture{
-  width: 468px;
-  height: 537.02px;
-  margin-left: 26px;
-  margin-bottom: 25px;
+.homepage_picture{
+  width: 29.25rem;
+  height: 33.564rem;
+  display: block;
+  margin: 0 auto;
+
+  /* margin-left: 1.625rem;
+  margin-bottom: 1.563rem; */
 }
 
 
 article{
   background-color: #fff;
+  z-index: 1;
   flex-direction: column;
-  margin-left: -8px;
-  margin-right: -12px;
+  width: 100%;
 }
 
 .partners{
   width: 100%;
-  height: 100;
-
-
+  height: 100%;
 
 }
 
 footer{
   background-color: #cccbc4;
+
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	grid-column-gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.grid2 {
+	display: flex;
+	flex-direction: column;
+	grid-column-gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@media (min-width: 750px) {
+	.grid {
+		flex-direction: row;
+	}
+
+	.opening {
+		flex-direction: row;
+	}
+
+  /*styling mediaquery*/
+
+  h1{
+    font-size: 5vw;
+    
+  }
+  p{
+    font-size: 2.2vw;
+  }
+
+  article{
+    width: 100%;
+  }
+
+  .homepage_picture{
+    width: 29.25rem;
+    height: 33.564rem;
+    display: block;
+    margin: 0 auto;
+}
 
 }
