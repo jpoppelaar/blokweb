@@ -18,7 +18,6 @@
 }
 body {
   background-color:#cccbc4;
-  z-index: 0;
 }
 
 .logo-main{
@@ -32,8 +31,14 @@ header {
 	left: 0;
 	right: 0;
 	top: 0;
+	z-index: 2;
 	
 /*styling voor de navigatie, door position fixed zal de gehele balk op het bovenste gedeelte van de website te zien zijn, ook bij scrollen*/;
+}
+
+.about-us-pictures{
+  max-width: 100%;
+
 }
 
 nav {
@@ -44,10 +49,12 @@ nav {
 nav img:first-of-type {
 	order: -1;
 	width: 3em;
+	z-index: 1;
 }
 
 nav img:last-of-type {
-	width: 5em;
+	max-width: 100%;
+	z-index: 1;
 }
 
 nav ul {
@@ -79,6 +86,12 @@ nav a {
 	transform: translateX(0);
 }
 
+#menu{
+  background:none;
+  border:none;
+
+}
+
 main p {
   max-width:40rem;
   margin:0 auto;
@@ -93,6 +106,11 @@ h1{
   margin-bottom: -40px;
 }
 
+#about-us{
+  font-family: 'AT Osmose';
+  text-align: center; 
+}
+
 h2{
   font-family: 'AT Osmose';
   font-size: 1.2em; 
@@ -105,13 +123,16 @@ h2{
 p{
   font-family: 'EditorialNew-Ultralight';
   line-height: 1.875rem;
-  font-size: 1.1em;
+  font-size: 100%;
   text-align: center;
   padding: 3.125rem 3rem 0.625rem 3rem;
   color: grey;
 
 }
+.text_align_left{
+  text-align: left;
 
+}
 .readmore{
   text-align: center;
   display: block; 
@@ -126,6 +147,7 @@ p{
   text-align: left;
   color: grey;
   margin-top: -2.5rem;
+  padding-left: 1rem;
   
 }
 
@@ -144,20 +166,14 @@ p{
 
 .homepage_picture{
   width: 29.25rem;
-  height: 33.564rem;
-  display: block;
-  margin: 0 auto;
-
-  /* margin-left: 1.625rem;
-  margin-bottom: 1.563rem; */
+  max-width: 100%;
 }
 
 
 article{
   background-color: #fff;
-  z-index: 1;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
 }
 
 .partners{
@@ -171,20 +187,11 @@ footer{
 
 }
 
+
 .grid {
 	display: flex;
 	flex-direction: column;
 	grid-column-gap: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.grid2 {
-	display: flex;
-	flex-direction: column;
-	grid-column-gap: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 
 @media (min-width: 750px) {
@@ -196,7 +203,11 @@ footer{
 		flex-direction: row;
 	}
 
-  /*styling mediaquery*/
+	.gsthuis {
+		flex-direction: row;
+    
+  /*styling mediaquery*/;
+	}
 
   h1{
     font-size: 5vw;
@@ -207,14 +218,11 @@ footer{
   }
 
   article{
+    
     width: 100%;
   }
-
-  .homepage_picture{
-    width: 29.25rem;
-    height: 33.564rem;
-    display: block;
-    margin: 0 auto;
 }
 
-}
+
+
+
