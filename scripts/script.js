@@ -1,5 +1,5 @@
 // JavaScript Document
-var hamburgermenu = document.querySelector('.hamburgermenu');
+var hamburgermenu = document.querySelector('button');
 var navigatie = document.querySelector('.navigatie');
 
 hamburgermenu.addEventListener('click',menuUitklappen);

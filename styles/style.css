@@ -49,7 +49,8 @@ nav {
 nav img:first-of-type {
 	order: -1;
 	width: 3em;
-	z-index: 1;
+	z-index: 100;
+  position: relative;
 }
 
 nav img:last-of-type {
@@ -183,8 +184,7 @@ article{
 }
 
 footer{
-  background-color: #cccbc4;
-
+  background-color: none;
 }
 
 
