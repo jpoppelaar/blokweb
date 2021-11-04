@@ -152,7 +152,10 @@ Flex direction column
  
 Dit is mij helaas niet gelukt en ik ben er ook niet uitgekomen.
 
-
+## Toegankelijkheids Test
+Je kunt mijn website bedienen met de tab-knop.
+ 
+ 
 ## Bronnenlijst
 
 <details open>
