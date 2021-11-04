@@ -40,11 +40,11 @@ https://artystycznapodrozhestii.pl/en/home/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 https://artystycznapodrozhestii.pl/en/home/
-<img src="images/dummy-plaatje.jpg" width="375px" alt="home">
+<img src="images/home.jpg" width="375px" alt="home">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 ps://artystycznapodrozhestii.pl/en/about-us/ 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="about us">
+<img src="images/about.jpg" width="375px" alt="about us">
  
 </details>
 
@@ -59,12 +59,6 @@ ps://artystycznapodrozhestii.pl/en/about-us/
 
 ### de hele pagina: 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
