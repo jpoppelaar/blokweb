@@ -20,6 +20,7 @@ body {
   background-color:#cccbc4;
 }
 
+/*Begin header*/
 .logo-main{
   display: block;
   padding: 1rem;
@@ -32,15 +33,18 @@ header {
 	right: 0;
 	top: 0;
 	z-index: 2;
-	
-/*styling voor de navigatie, door position fixed zal de gehele balk op het bovenste gedeelte van de website te zien zijn, ook bij scrollen*/;
+/*styling voor de navigatie, door position fixed zal de gehele balk op het bovenste 
+gedeelte van de website te zien zijn, ook bij scrollen*/
 }
 
 .about-us-pictures{
   max-width: 100%;
 
 }
-
+:placeholder-shown{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -75,6 +79,8 @@ nav ul {
 	flex-direction: column;
 	justify-content: space-evenly;
 	z-index: 0;
+  /* laat je weten welke laag er bovenop moet komen (de onderste laag) */
+
   font-family: Helvetica, Arial, Sans-Serif;
 }
 
@@ -86,6 +92,7 @@ nav a {
 .uitklappen {
 	transform: translateX(0);
 }
+/* dit betekent dat mijn menu op de X-as uit geklapt word*/
 
 #menu{
   background:none;
@@ -93,6 +100,9 @@ nav a {
 
 }
 
+/*Einde header*/
+
+/*Begin Main*/
 main p {
   max-width:40rem;
   margin:0 auto;
@@ -113,6 +123,42 @@ h1{
 }
 
 h2{
+  font-family: 'AT Osmose';
+  font-size: 1.2em; 
+  color:#535353;
+  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+h3{
+  font-family: 'AT Osmose';
+  font-size: 1.2em; 
+  color:#535353;
+  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+h4{
+  font-family: 'AT Osmose';
+  font-size: 1.2em; 
+  color:#535353;
+  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+h5{
+  font-family: 'AT Osmose';
+  font-size: 1.2em; 
+  color:#535353;
+  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+h6{
   font-family: 'AT Osmose';
   font-size: 1.2em; 
   color:#535353;
@@ -159,12 +205,6 @@ p{
   margin-top: -6.313rem;
 }
 
-/* .first_picture{
-  width: 29.25rem;
-  height: 33.564rem;
-  padding-left: 1.875rem;
-} */
-
 .homepage_picture{
   width: 29.25rem;
   max-width: 100%;
@@ -177,6 +217,9 @@ article{
   max-width: 100%;
 }
 
+/*Einde Main*/
+
+/*Begin Footer*/
 .partners{
   width: 100%;
   height: 100%;
@@ -194,6 +237,9 @@ footer{
 	grid-column-gap: 1em;
 }
 
+/*Einde Footer*/
+
+/*Responsive*/
 @media (min-width: 750px) {
 	.grid {
 		flex-direction: row;
@@ -206,7 +252,7 @@ footer{
 	.gsthuis {
 		flex-direction: row;
     
-  /*styling mediaquery*/;
+  /*Styling Media Query*/;
 	}
 
   h1{
